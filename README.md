@@ -8,3 +8,7 @@ https://www.kaggle.com/tmdb/tmdb-movie-metadata#tmdb_5000_movies.csv
 2. adjust keywords threshold
 3. process the other features listed
 4. add jialiang's time code
+
+## Xiao
+1. put together first_model_checkin_Groot.ipynb
+2. Problem to solve: cast+gender as features take forever to train the model using GridSearchCV
