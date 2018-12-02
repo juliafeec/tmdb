@@ -16,5 +16,5 @@ https://www.kaggle.com/tmdb/tmdb-movie-metadata#tmdb_5000_movies.csv
 learn codes
 
 ## Xiao
-1. put together first_model_checkin_Groot.ipynb
-2. Problem to solve: cast+gender as features take forever to train the model using GridSearchCV
+1. Added heatmap of genres pairs
+2. Added Doc2Vec for subtitles to the main notebook
