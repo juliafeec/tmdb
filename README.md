@@ -61,6 +61,8 @@ We choose precision, recall and hamming loss as our evaluation metrics.
 	We care about the recall per class because in practice we want to add as many "correct" movie genres as possible to better label the movies.   
 
 + **Hamming loss**:  
-	For multi-label problems, hamming loss is a good metrics to evaluate the performance of the model.   
+	It's the fraction of the wrong labels to the total number of labels. For multi-label problems, hamming loss is a good metrics to evaluate the performance of the model.   
 	
-+ **Accuracy**:
++ **Accuracy**:   
+	Accuracy is not a good metric for multi-label classification problem. Because it's usually very hard to get a high score.   
+	
