@@ -56,8 +56,11 @@ The original format for subtitles are `.srt`, including both subtitles and the t
 
 We choose precision, recall and hamming loss as our evaluation metrics.  
 
-+ **Precision and recall**:   
-	We cares about the precision and recall per class because in practice we want to add as many "correct" movie genres as possible to better label the movies.  
++ **Precision, Recall, F-score**:   
+	We care about the precision because we don't want to confuse the users and make sure that the movies they find using genres would meet their expectations as much as possible.   
+	We care about the recall per class because in practice we want to add as many "correct" movie genres as possible to better label the movies.   
 
 + **Hamming loss**:  
-	For multi-label problems, hamming loss is a good metrics to evaluate the performance of the model.
+	For multi-label problems, hamming loss is a good metrics to evaluate the performance of the model.   
+	
++ **Accuracy**:
