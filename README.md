@@ -43,13 +43,21 @@ The original format for subtitles are `.srt`, including both subtitles and the t
 	In addition to `Doc2Vec`, we also did `Tfdif` on subtitles because we want to know which words have the largest influence on deciding the movie genres.  
 	
 + **Cast names**:  
+	For cast names, we remove the space between the first name and last name to make each name a unique work and use `CountVectorizer` to vectorize them.  
 	
-	
-+ Keywords, production companies, production countries
++ **Keywords, production companies, production countries**:  
+	We train a `MultiLabelBinarizer` and do one-hot encoding for these three features.  
 
 ## Modeling
 
 
+
 ## Evaluation
 
+We choose precision, recall and hamming loss as our evaluation metrics.  
 
++ **Precision and recall**:   
+	We cares about the precision and recall per class because in practice we want to add as many "correct" movie genres as possible to better label the movies.  
+
++ **Hamming loss**:  
+	For multi-label problems, hamming loss is a good metrics to evaluate the performance of the model.
