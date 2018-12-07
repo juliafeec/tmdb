@@ -1,7 +1,5 @@
 # TMDb Movie Genres Classification
 
-
-
 ## Goal
 We want to predict movie genres based on general movie information obtained from TMDb website.  
 
@@ -50,6 +48,25 @@ The original format for subtitles are `.srt`, including both subtitles and the t
 
 ## Modeling
 
+**Using Doc2Vec for subtitles:**
+
+| Metrics                  | Multinomial Naive Bayes | Random Forest |
+| :----------------------: | :---------------------: | :-----------: |
+| Weighted Precision       | 0.5333                  | **0.7551**    |  
+| Weighted Recall          | **0.6296**              | 0.3151        |
+| Weighted F1 Score        | **0.5743**              | 0.4101        |
+| Hamming Loss             | 0.1240                  | **0.1045**    |
+| Subset Accuracy          | 0.1327                  | 0.1327        |
+
+**Not using Doc2Vec for subtitles:**
+
+| Metrics                  | Multinomial Naive Bayes | Random Forest |
+| :----------------------: | :---------------------: | :-----------: |
+| Weighted Precision       | 0.4877                  | **0.7610**    |
+| Weighted Recall          | **0.6064**              | 0.4374        |
+| Weighted F1 Score        | **0.5384**              | 0.5341        |
+| Hamming Loss             | 0.1473                  | **0.0936**    |
+| Subset Accuracy          | 0.1091                  | **0.1754**    |
 
 
 ## Evaluation
@@ -57,12 +74,12 @@ The original format for subtitles are `.srt`, including both subtitles and the t
 We choose precision, recall and hamming loss as our evaluation metrics.  
 
 + **Precision, Recall, F-score**:   
-	We care about the precision because we don't want to confuse the users and make sure that the movies they find using genres would meet their expectations as much as possible.   
-	We care about the recall per class because in practice we want to add as many "correct" movie genres as possible to better label the movies.   
+	+ We care about the precision because we don't want to confuse the users and make sure that the movies they find using genres would meet their expectations as well as possible.  
+  
+	+ We care about the recall because in practice we want to add as many "correct" movie genres as possible to better label the movies.   
 
 + **Hamming loss**:  
-	It's the fraction of the wrong labels to the total number of labels. For multi-label problems, hamming loss is a good metrics to evaluate the performance of the model.   
+	Hamming loss refers to the fraction of the wrong labels to the total number of labels per prediction. So it is a good metric to evaluate model performance in multi-label classification problems.   
 	
 + **Accuracy**:   
-	Accuracy is not a good metric for multi-label classification problem. Because it's usually very hard to get a high score.   
-	
+	Accuracy is not a good metric for multi-label classification problem, since the `accuracy_rate()` in `sklearn` will measure the subset accuracy in this case, and only an exact match will be counted as a 1.
