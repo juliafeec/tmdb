@@ -2,6 +2,33 @@
 
 *Group member: Julia Tavares, Wei Wei, Xiao Han, Jialiang Shi, Xueyin Wang*  
 
+## Table of Contents
+* File Description  
+* Goal  
+* Data Description  
+* Data Preprocessing  
+* Feature Engineering  
+* Modeling  
+* Evaluation  
+	
+## File Description  
+* Data Discover:  
+	- [TMDB.ipynb](https://github.com/juliafeec/tmdb/blob/master/TMDB.ipynb)  
+	- [TMDB Discover.ipynb](https://github.com/juliafeec/tmdb/blob/master/TMDB%20Discover.ipynb)  
+	- [TMDB Discover - Part 2 (Join Data).ipynb](https://github.com/juliafeec/tmdb/blob/master/TMDB%20Discover%20-%20Part%202%20(Join%20Data).ipynb)  
+* Feature preocessing:  
+	- [Download subtitles.ipynb](https://github.com/juliafeec/tmdb/blob/master/Download%20subtitles.ipynb)
+	- [Process Subtitles.ipynb](https://github.com/juliafeec/tmdb/blob/master/Process%20Subtitles.ipynb)
+	- [Doc2Vec.ipynb](https://github.com/juliafeec/tmdb/blob/master/Doc2Vec.ipynb)  
+	- [tokenizer.ipynb](https://github.com/juliafeec/tmdb/blob/master/tokenizer.ipynb)  
+* Complete Main Work:  
+	- [main_work_2tfidf.ipynb](https://github.com/juliafeec/tmdb/blob/master/main_work_2tfidf.ipynb) Converting both overview and subtitles with tfidf. 
+	- [main_work_tfidf+Doc2Vec.ipynb](https://github.com/juliafeec/tmdb/blob/master/main_work_tfidf%2BDoc2Vec.ipynb) Converting overview with tfidf and subtitles with doc2vec . 
+* Presentation:   
+	- [prensentation_movie.ipynb](https://github.com/juliafeec/tmdb/blob/master/prensentation_movie.ipynb)  
+	- [images](https://github.com/juliafeec/tmdb/tree/master/images)  
+	- [WordCloud.ipynb](https://github.com/juliafeec/tmdb/blob/master/WordCloud.ipynb)  
+
 ## Goal
 We want to predict movie genres based on general movie information obtained from TMDb website.  
 
@@ -50,7 +77,7 @@ The original format for subtitles are `.srt`, including both subtitles and the t
 
 ## Modeling
 
-**Using Doc2Vec for subtitles:**
+**Not Using Doc2Vec for subtitles:**
 
 | Metrics                  | Multinomial Naive Bayes | Random Forest |
 | :----------------------: | :---------------------: | :-----------: |
@@ -60,7 +87,7 @@ The original format for subtitles are `.srt`, including both subtitles and the t
 | Hamming Loss             | 0.1240                  | **0.1045**    |
 | Subset Accuracy          | 0.1327                  | 0.1327        |
 
-**Not using Doc2Vec for subtitles:**
+**Using Doc2Vec for subtitles:**
 
 | Metrics                  | Multinomial Naive Bayes | Random Forest |
 | :----------------------: | :---------------------: | :-----------: |
@@ -71,7 +98,7 @@ The original format for subtitles are `.srt`, including both subtitles and the t
 | Subset Accuracy          | 0.1091                  | **0.1754**    |
 
 
-## Evaluation
+## Metrics  
 
 We choose precision, recall and hamming loss as our evaluation metrics.  
 
