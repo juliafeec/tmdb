@@ -28,6 +28,7 @@
 	- [prensentation_movie.ipynb](https://github.com/juliafeec/tmdb/blob/master/presentation/prensentation_movie.ipynb)  
 	- [images](https://github.com/juliafeec/tmdb/tree/master/images)  
 	- [WordCloud.ipynb](https://github.com/juliafeec/tmdb/blob/master/presentation/WordCloud.ipynb)  
+	- [treeViz.ipynb](https://github.com/juliafeec/tmdb/blob/master/presentation/treeViz.ipynb)
 
 ## Goal
 We want to predict movie genres based on general movie information obtained from TMDb website.  
