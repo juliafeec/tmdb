@@ -1,5 +1,7 @@
 # TMDb Movie Genres Classification
 
+*Group member: Julia Tavares, Wei Wei, Xiao Han, Jialiang Shi, Xueyin Wang*  
+
 ## Goal
 We want to predict movie genres based on general movie information obtained from TMDb website.  
 
