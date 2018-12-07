@@ -25,7 +25,7 @@
 	- [main_work_2tfidf.ipynb](https://github.com/juliafeec/tmdb/blob/master/main_work_2tfidf.ipynb) Converting both overview and subtitles with tfidf. 
 	- [main_work_tfidf+Doc2Vec.ipynb](https://github.com/juliafeec/tmdb/blob/master/main_work_tfidf%2BDoc2Vec.ipynb) Converting overview with tfidf and subtitles with doc2vec . 
 * Presentation:   
-	- [prensentation_movie.ipynb](https://github.com/juliafeec/tmdb/blob/master/presentation/prensentation_movie.ipynb)  
+	- [prensentation_20181207.ipynb](https://github.com/juliafeec/tmdb/blob/master/presentation/prensentation_20181207.ipynb)  
 	- [images](https://github.com/juliafeec/tmdb/tree/master/images)  
 	- [WordCloud.ipynb](https://github.com/juliafeec/tmdb/blob/master/presentation/WordCloud.ipynb)  
 	- [treeViz.ipynb](https://github.com/juliafeec/tmdb/blob/master/presentation/treeViz.ipynb)
@@ -113,3 +113,6 @@ We choose precision, recall and hamming loss as our evaluation metrics.
 	
 + **Accuracy**:   
 	Accuracy is not a good metric for multi-label classification problem, since the `accuracy_rate()` in `sklearn` will measure the subset accuracy in this case, and only an exact match will be counted as a 1.
+
+
+*Note: If you cannot edit or execute some cells, please go to the nbextensions setting page and enable the "Freeze" extension to be able to unfreeze those cells.*
