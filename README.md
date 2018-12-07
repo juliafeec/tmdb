@@ -13,21 +13,21 @@
 	
 ## File Description  
 * Data Discover:  
-	- [TMDB.ipynb](https://github.com/juliafeec/tmdb/blob/master/TMDB.ipynb)  
-	- [TMDB Discover.ipynb](https://github.com/juliafeec/tmdb/blob/master/TMDB%20Discover.ipynb)  
-	- [TMDB Discover - Part 2 (Join Data).ipynb](https://github.com/juliafeec/tmdb/blob/master/TMDB%20Discover%20-%20Part%202%20(Join%20Data).ipynb)  
+	- [TMDB.ipynb](https://github.com/juliafeec/tmdb/blob/master/data_dicover/TMDB.ipynb)  
+	- [TMDB Discover.ipynb](https://github.com/juliafeec/tmdb/blob/master/data_dicover/TMDB%20Discover.ipynb)  
+	- [TMDB Discover - Part 2 (Join Data).ipynb](https://github.com/juliafeec/tmdb/blob/master/data_dicover/TMDB%20Discover%20-%20Part%202%20(Join%20Data).ipynb)  
 * Feature preocessing:  
-	- [Download subtitles.ipynb](https://github.com/juliafeec/tmdb/blob/master/Download%20subtitles.ipynb)
-	- [Process Subtitles.ipynb](https://github.com/juliafeec/tmdb/blob/master/Process%20Subtitles.ipynb)
-	- [Doc2Vec.ipynb](https://github.com/juliafeec/tmdb/blob/master/Doc2Vec.ipynb)  
-	- [tokenizer.ipynb](https://github.com/juliafeec/tmdb/blob/master/tokenizer.ipynb)  
+	- [Download subtitles.ipynb](https://github.com/juliafeec/tmdb/blob/master/feature_preprocessing/Download%20subtitles.ipynb)
+	- [Process Subtitles.ipynb](https://github.com/juliafeec/tmdb/blob/master/feature_preprocessing/Process%20Subtitles.ipynb)
+	- [Doc2Vec.ipynb](https://github.com/juliafeec/tmdb/blob/master/feature_preprocessing/Doc2Vec.ipynb)  
+	- [tokenizer.ipynb](https://github.com/juliafeec/tmdb/blob/master/feature_preprocessing/tokenizer.ipynb)  
 * Complete Main Work:  
 	- [main_work_2tfidf.ipynb](https://github.com/juliafeec/tmdb/blob/master/main_work_2tfidf.ipynb) Converting both overview and subtitles with tfidf. 
 	- [main_work_tfidf+Doc2Vec.ipynb](https://github.com/juliafeec/tmdb/blob/master/main_work_tfidf%2BDoc2Vec.ipynb) Converting overview with tfidf and subtitles with doc2vec . 
 * Presentation:   
-	- [prensentation_movie.ipynb](https://github.com/juliafeec/tmdb/blob/master/prensentation_movie.ipynb)  
+	- [prensentation_movie.ipynb](https://github.com/juliafeec/tmdb/blob/master/presentation/prensentation_movie.ipynb)  
 	- [images](https://github.com/juliafeec/tmdb/tree/master/images)  
-	- [WordCloud.ipynb](https://github.com/juliafeec/tmdb/blob/master/WordCloud.ipynb)  
+	- [WordCloud.ipynb](https://github.com/juliafeec/tmdb/blob/master/presentation/WordCloud.ipynb)  
 
 ## Goal
 We want to predict movie genres based on general movie information obtained from TMDb website.  
